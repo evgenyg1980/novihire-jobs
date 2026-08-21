@@ -572,4 +572,19 @@ function copyAddr(addr, btn){
     setTimeout(function(){ btn.textContent = t; }, 1600);
   });
 }
+// On phones the Gmail-web compose URL just opens the inbox (mobile web ignores
+// view=cm), while mailto: hands off to the Gmail APP with everything prefilled —
+// the opposite of desktop, where mailto is the unreliable one. Swap roles.
+if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+  document.querySelectorAll('.apply').forEach(function(a){
+    var g = a.querySelector('.btn:not(.alt)');
+    var m = a.querySelector('.btn.alt');
+    if (!g || !m) return;
+    var gmailHref = g.href;
+    g.href = m.href; g.removeAttribute('target');
+    g.textContent = '📧 שליחת קורות חיים';
+    m.href = gmailHref; m.target = '_blank';
+    m.textContent = 'או דרך Gmail בדפדפן';
+  });
+}
 </script></body></html>
