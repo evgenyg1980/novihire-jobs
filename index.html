@@ -73,6 +73,10 @@ footer p{max-width:620px;margin:6px auto}
   .card{padding:16px}
   .apply .btn{width:100%;text-align:center}
 }
+
+.solo-note{display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  background:var(--gold-soft);border:1px solid var(--gold);border-radius:10px;
+  padding:10px 14px;margin:0 0 18px;font-weight:600;color:var(--navy)}
 </style></head><body>
 <header><div class="wrap">
 <div class="badge">גיוס דיסקרטי · ללא עלות למועמד</div>
@@ -98,7 +102,7 @@ footer p{max-width:620px;margin:6px auto}
 <button class="chip" onclick="filterCity('סכנין', this)">סכנין</button>
 </div>
 <div class="cards">
-<article class="card" data-city="ראשל&quot;צ">
+<article class="card" id="bj01" data-city="ראשל&quot;צ">
 <div class="top"><h2>מנהל.ת מחלקת עו&quot;ש סניף ראשל&quot;צ</h2><span class="code">BJ-01</span></div>
 <p class="meta">📍 ראשל&quot;צ &nbsp;·&nbsp; בנקאות &nbsp;·&nbsp; משרה מלאה</p>
 <ul>
@@ -125,7 +129,7 @@ footer p{max-width:620px;margin:6px auto}
 </div>
 <p class="note">📎 חשוב: צרפו קובץ קורות חיים, ובנושא המייל ציינו את קוד המשרה <b>BJ-01</b></p>
 </div></article>
-<article class="card" data-city="קריות">
+<article class="card" id="bj02" data-city="קריות">
 <div class="top"><h2>בנקאי.ת עו&quot;ש להחלפת חל&quot;ד - סניף הקריות</h2><span class="code">BJ-02</span></div>
 <p class="meta">📍 קריות &nbsp;·&nbsp; בנקאות &nbsp;·&nbsp; משרה מלאה</p>
 <ul>
@@ -152,7 +156,7 @@ footer p{max-width:620px;margin:6px auto}
 </div>
 <p class="note">📎 חשוב: צרפו קובץ קורות חיים, ובנושא המייל ציינו את קוד המשרה <b>BJ-02</b></p>
 </div></article>
-<article class="card" data-city="כרמיאל">
+<article class="card" id="bj03" data-city="כרמיאל">
 <div class="top"><h2>יועץ.ת משכנתאות להחלפת חל&quot;ד בסניף כרמיאל</h2><span class="code">BJ-03</span></div>
 <p class="meta">📍 כרמיאל &nbsp;·&nbsp; בנקאות &nbsp;·&nbsp; משרה מלאה</p>
 <ul>
@@ -179,7 +183,7 @@ footer p{max-width:620px;margin:6px auto}
 </div>
 <p class="note">📎 חשוב: צרפו קובץ קורות חיים, ובנושא המייל ציינו את קוד המשרה <b>BJ-03</b></p>
 </div></article>
-<article class="card" data-city="ירושלים">
+<article class="card" id="bj04" data-city="ירושלים">
 <div class="top"><h2>בנקאי.ת עו&quot;ש וקופה לסניף בנקאות פרטית ירושלים</h2><span class="code">BJ-04</span></div>
 <p class="meta">📍 ירושלים &nbsp;·&nbsp; בנקאות &nbsp;·&nbsp; משרה מלאה</p>
 <ul>
@@ -206,7 +210,7 @@ footer p{max-width:620px;margin:6px auto}
 </div>
 <p class="note">📎 חשוב: צרפו קובץ קורות חיים, ובנושא המייל ציינו את קוד המשרה <b>BJ-04</b></p>
 </div></article>
-<article class="card" data-city="חיפה">
+<article class="card" id="bj05" data-city="חיפה">
 <div class="top"><h2>בנקאי.ת זמני.ת להחלפת חל&quot;ד סניף חיפה</h2><span class="code">BJ-05</span></div>
 <p class="meta">📍 חיפה &nbsp;·&nbsp; בנקאות &nbsp;·&nbsp; משרה מלאה</p>
 <ul>
@@ -233,7 +237,7 @@ footer p{max-width:620px;margin:6px auto}
 </div>
 <p class="note">📎 חשוב: צרפו קובץ קורות חיים, ובנושא המייל ציינו את קוד המשרה <b>BJ-05</b></p>
 </div></article>
-<article class="card" data-city="חיפה">
+<article class="card" id="bj06" data-city="חיפה">
 <div class="top"><h2>רפרנט.ית גבייה צפון להחלפת חל&quot;ד</h2><span class="code">BJ-06</span></div>
 <p class="meta">📍 חיפה &nbsp;·&nbsp; בנקאות &nbsp;·&nbsp; משרה מלאה</p>
 <ul>
@@ -260,7 +264,7 @@ footer p{max-width:620px;margin:6px auto}
 </div>
 <p class="note">📎 חשוב: צרפו קובץ קורות חיים, ובנושא המייל ציינו את קוד המשרה <b>BJ-06</b></p>
 </div></article>
-<article class="card" data-city="ירושלים">
+<article class="card" id="bj07" data-city="ירושלים">
 <div class="top"><h2>יועץ.ת משכנתאות סניף בנקאות פרטית, ירושלים</h2><span class="code">BJ-07</span></div>
 <p class="meta">📍 ירושלים &nbsp;·&nbsp; בנקאות &nbsp;·&nbsp; משרה מלאה</p>
 <ul>
@@ -287,7 +291,7 @@ footer p{max-width:620px;margin:6px auto}
 </div>
 <p class="note">📎 חשוב: צרפו קובץ קורות חיים, ובנושא המייל ציינו את קוד המשרה <b>BJ-07</b></p>
 </div></article>
-<article class="card" data-city="בית שמש">
+<article class="card" id="bj08" data-city="בית שמש">
 <div class="top"><h2>יועץ.ת משכנתאות לסניף בית שמש</h2><span class="code">BJ-08</span></div>
 <p class="meta">📍 בית שמש &nbsp;·&nbsp; בנקאות &nbsp;·&nbsp; משרה מלאה</p>
 <ul>
@@ -314,7 +318,7 @@ footer p{max-width:620px;margin:6px auto}
 </div>
 <p class="note">📎 חשוב: צרפו קובץ קורות חיים, ובנושא המייל ציינו את קוד המשרה <b>BJ-08</b></p>
 </div></article>
-<article class="card" data-city="איירפורט סיטי">
+<article class="card" id="bj09" data-city="איירפורט סיטי">
 <div class="top"><h2>בנקאי.ת משכנתאות במרכז יועצים</h2><span class="code">BJ-09</span></div>
 <p class="meta">📍 איירפורט סיטי &nbsp;·&nbsp; בנקאות &nbsp;·&nbsp; משרה מלאה</p>
 <ul>
@@ -341,7 +345,7 @@ footer p{max-width:620px;margin:6px auto}
 </div>
 <p class="note">📎 חשוב: צרפו קובץ קורות חיים, ובנושא המייל ציינו את קוד המשרה <b>BJ-09</b></p>
 </div></article>
-<article class="card" data-city="באר שבע">
+<article class="card" id="bj10" data-city="באר שבע">
 <div class="top"><h2>בנקאי.ת זמני להחלפת חל&quot;ד לסניף באר שבע</h2><span class="code">BJ-10</span></div>
 <p class="meta">📍 באר שבע &nbsp;·&nbsp; בנקאות &nbsp;·&nbsp; משרה מלאה</p>
 <h3>דרישות עיקריות</h3><ul>
@@ -362,7 +366,7 @@ footer p{max-width:620px;margin:6px auto}
 </div>
 <p class="note">📎 חשוב: צרפו קובץ קורות חיים, ובנושא המייל ציינו את קוד המשרה <b>BJ-10</b></p>
 </div></article>
-<article class="card" data-city="חיפה">
+<article class="card" id="bj11" data-city="חיפה">
 <div class="top"><h2>יועץ.ת משכנתאות סניף חיפה</h2><span class="code">BJ-11</span></div>
 <p class="meta">📍 חיפה &nbsp;·&nbsp; בנקאות &nbsp;·&nbsp; משרה מלאה</p>
 <ul>
@@ -389,7 +393,7 @@ footer p{max-width:620px;margin:6px auto}
 </div>
 <p class="note">📎 חשוב: צרפו קובץ קורות חיים, ובנושא המייל ציינו את קוד המשרה <b>BJ-11</b></p>
 </div></article>
-<article class="card" data-city="ירושלים">
+<article class="card" id="bj12" data-city="ירושלים">
 <div class="top"><h2>בנקאי.ת בצוות עסקי לסניף בנקאות פרטית</h2><span class="code">BJ-12</span></div>
 <p class="meta">📍 ירושלים &nbsp;·&nbsp; בנקאות &nbsp;·&nbsp; משרה מלאה</p>
 <ul>
@@ -416,7 +420,7 @@ footer p{max-width:620px;margin:6px auto}
 </div>
 <p class="note">📎 חשוב: צרפו קובץ קורות חיים, ובנושא המייל ציינו את קוד המשרה <b>BJ-12</b></p>
 </div></article>
-<article class="card" data-city="ראשון לציון">
+<article class="card" id="bj13" data-city="ראשון לציון">
 <div class="top"><h2>בנקאי.ת לסניף ראשון לציון</h2><span class="code">BJ-13</span></div>
 <p class="meta">📍 ראשון לציון &nbsp;·&nbsp; בנקאות &nbsp;·&nbsp; משרה מלאה</p>
 <ul>
@@ -443,7 +447,7 @@ footer p{max-width:620px;margin:6px auto}
 </div>
 <p class="note">📎 חשוב: צרפו קובץ קורות חיים, ובנושא המייל ציינו את קוד המשרה <b>BJ-13</b></p>
 </div></article>
-<article class="card" data-city="סכנין">
+<article class="card" id="bj14" data-city="סכנין">
 <div class="top"><h2>בנקאי.ת לסניף סכנין</h2><span class="code">BJ-14</span></div>
 <p class="meta">📍 סכנין &nbsp;·&nbsp; בנקאות &nbsp;·&nbsp; משרה מלאה</p>
 <ul>
@@ -470,7 +474,7 @@ footer p{max-width:620px;margin:6px auto}
 </div>
 <p class="note">📎 חשוב: צרפו קובץ קורות חיים, ובנושא המייל ציינו את קוד המשרה <b>BJ-14</b></p>
 </div></article>
-<article class="card" data-city="ירושלים">
+<article class="card" id="bj15" data-city="ירושלים">
 <div class="top"><h2>בוחן/ת ביחידת הבחינה</h2><span class="code">BJ-15</span></div>
 <p class="meta">📍 ירושלים &nbsp;·&nbsp; מטה וניהול &nbsp;·&nbsp; משרה מלאה</p>
 <ul>
@@ -497,7 +501,7 @@ footer p{max-width:620px;margin:6px auto}
 </div>
 <p class="note">📎 חשוב: צרפו קובץ קורות חיים, ובנושא המייל ציינו את קוד המשרה <b>BJ-15</b></p>
 </div></article>
-<article class="card" data-city="איירפורט סיטי">
+<article class="card" id="bj16" data-city="איירפורט סיטי">
 <div class="top"><h2>רפרנט.ית ני&quot;ע ביחידת תפעול ובקרות ני&quot;ע</h2><span class="code">BJ-16</span></div>
 <p class="meta">📍 איירפורט סיטי &nbsp;·&nbsp; מטה וניהול &nbsp;·&nbsp; משרה מלאה</p>
 <ul>
@@ -524,7 +528,7 @@ footer p{max-width:620px;margin:6px auto}
 </div>
 <p class="note">📎 חשוב: צרפו קובץ קורות חיים, ובנושא המייל ציינו את קוד המשרה <b>BJ-16</b></p>
 </div></article>
-<article class="card" data-city="איירפורט סיטי">
+<article class="card" id="bj17" data-city="איירפורט סיטי">
 <div class="top"><h2>מזכיר.ת חטיבת המשאבים והחדשנות והטכנולוגיות</h2><span class="code">BJ-17</span></div>
 <p class="meta">📍 איירפורט סיטי &nbsp;·&nbsp; מטה וניהול &nbsp;·&nbsp; משרה מלאה</p>
 <ul>
@@ -556,7 +560,7 @@ footer p{max-width:620px;margin:6px auto}
 <p><b>לא מצאתם משרה מתאימה?</b> עוד משרות חדשות מתפרסמות כל יום בערוץ הטלגרם שלנו:</p>
 <a class="btn" href="https://t.me/job_offers_IL">📢 הצטרפו לערוץ המשרות בטלגרם</a>
 <p>שאלות? כתבו לנו: <span style="direction:ltr;display:inline-block">novihire@gmail.com</span></p>
-<p class="small">המשרות מיועדות לנשים וגברים כאחד. המעסיק מעודד העסקה של אנשים עם מוגבלות.<br>עודכן: 2026-08-21</p>
+<p class="small">המשרות מיועדות לנשים וגברים כאחד. המעסיק מעודד העסקה של אנשים עם מוגבלות.<br>עודכן: 2026-08-27</p>
 </div></footer>
 <script>
 function filterCity(city, el){
@@ -565,6 +569,29 @@ function filterCity(city, el){
   document.querySelectorAll('.card').forEach(function(card){
     card.style.display = (city === '*' || card.dataset.city === city) ? '' : 'none';
   });
+}
+function resetCards(){
+  document.querySelectorAll('.card').forEach(function(c){c.style.display=''});
+  var n = document.getElementById('solo'); if (n) n.remove();
+}
+function showAll(){
+  resetCards();
+  history.replaceState(null, '', location.pathname);
+}
+function focusFromHash(){
+  var h = (location.hash || '').replace('#','').toLowerCase();
+  if (!/^bj[0-9]+$/.test(h)) return;
+  var target = document.getElementById(h);
+  if (!target) return;                       // retired code — fall back to the full list
+  document.querySelectorAll('.card').forEach(function(c){
+    c.style.display = (c.id === h) ? '' : 'none';
+  });
+  var main = document.querySelector('main.wrap');
+  var note = document.createElement('div');
+  note.id = 'solo'; note.className = 'solo-note';
+  note.innerHTML = 'מוצגת משרה אחת · <button class="chip" onclick="showAll()">הצגת כל המשרות</button>';
+  main.insertBefore(note, main.firstChild);
+  window.scrollTo(0, 0);
 }
 function copyAddr(addr, btn){
   navigator.clipboard.writeText(addr).then(function(){
@@ -575,6 +602,9 @@ function copyAddr(addr, btn){
 // On phones the Gmail-web compose URL just opens the inbox (mobile web ignores
 // view=cm), while mailto: hands off to the Gmail APP with everything prefilled —
 // the opposite of desktop, where mailto is the unreliable one. Swap roles.
+focusFromHash();
+window.addEventListener('hashchange', function(){ resetCards(); focusFromHash(); });
+
 if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
   document.querySelectorAll('.apply').forEach(function(a){
     var g = a.querySelector('.btn:not(.alt)');
